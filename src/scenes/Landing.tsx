@@ -2,6 +2,7 @@ import useMediaQuery from "../hook/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImage from "../assets/profile-image.png";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 type Props = { setSelectedPage: (value: string) => void };
 
@@ -59,6 +60,48 @@ const Landing = ({ setSelectedPage }: Props) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In unde
             enim dicta inventore assumenda excepturi beatae modi animi ipsum
           </p>
+        </motion.div>
+
+        {/* CALL TO ACTION */}
+        <motion.div
+          className="mt-5 flex justify-center md:text-justify"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <AnchorLink
+            className="rounded-sm bg-gradient-rainblue px-7 py-3 font-semibold text-blue-950 transition duration-500 hover:cursor-pointer hover:bg-blue-600  hover:text-white"
+            onClick={() => setSelectedPage("contact")}
+          >
+            Contact Me
+          </AnchorLink>
+
+          <AnchorLink
+            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 "
+            onClick={() => setSelectedPage("contact")}
+          >
+            <div className=" flex h-full w-full items-center justify-center bg-blue-950 px-10 font-playfair transition duration-500 hover:cursor-pointer hover:text-red-400">
+              Let's talk
+            </div>
+          </AnchorLink>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>
