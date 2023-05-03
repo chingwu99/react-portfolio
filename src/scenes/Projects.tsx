@@ -16,7 +16,7 @@ const container = {
 // const Projects = (props: Props) => {
 const Projects = () => {
   return (
-    <section className="pb-48 pt-48">
+    <section className="pb-48 pt-48" id="projects">
       {/* HEADING */}
       <motion.div
         className="mx-auto text-center md:w-2/4"
