@@ -13,12 +13,14 @@ type Props = {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const [isMenuToggeled, setIsMenuToggeled] = useState<boolean>(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
-  const navbarBackground = isTopOfPage ? "" : " bg-red-500";
+  const navbarBackground = isTopOfPage
+    ? "transition duration-500 "
+    : "  bg-violet-400 transition duration-500 shadow-xl shadow-black ";
 
   return (
     <nav className={`${navbarBackground} fixed top-0 z-40 w-full py-6`}>
       <div
-        className="mx-auto flex w-5/6 items-center justify-between
+        className="mx-auto flex w-5/6 items-center justify-between 
     "
       >
         <h4 className=" font-playfair text-3xl font-bold">HW</h4>
@@ -45,7 +47,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             />
 
             <Link
-              page="Testimonials"
+              page="About"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -96,7 +98,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               />
 
               <Link
-                page="Testimonials"
+                page="About"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

@@ -26,8 +26,8 @@ const MySkills = () => {
 
           <LinearGradient width="w-1/3" />
           <p className="mb-7 mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit
-            culpa aut aspernatur ex eligendi a ab eveniet voluptate numquam
+            I am familiar with Responsive Web Design and React, while also
+            learning frontend technologies such as TypeScript.
           </p>
         </motion.div>
 
@@ -60,17 +60,18 @@ const MySkills = () => {
             <div className="z-10">
               <p className=" font-playfair text-5xl font-semibold">01</p>
               <p className=" mt-3 font-playfair text-5xl font-semibold">
-                Experience
+                Web Layout
               </p>
             </div>
             <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-blue-400 md:w-3/4"></div>
           </div>
 
           <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem
-            doloremque, eveniet cum facilis doloribus. Quae voluptas minima
-            maiores, eaque natus ad tempore perferendis molestias aut quis
-            cupiditate? Omnis, non!
+            -HTML 5 <br />
+            -CSS 3 <br />
+            -SCSS <br />
+            -Bootstrap 5 <br />
+            -Tailwind CSS
           </p>
         </motion.div>
 
@@ -90,18 +91,35 @@ const MySkills = () => {
             <div className="z-10">
               <p className=" font-playfair text-5xl font-semibold">02</p>
               <p className=" mt-3 font-playfair text-5xl font-semibold">
-                Innovative
+                JS and React
               </p>
             </div>
             <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-red-400 md:w-3/4"></div>
           </div>
 
-          <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem
-            doloremque, eveniet cum facilis doloribus. Quae voluptas minima
-            maiores, eaque natus ad tempore perferendis molestias aut quis
-            cupiditate? Omnis, non!
-          </p>
+          <div className=" flex justify-between">
+            <div>
+              <p className="mt-5 ">
+                React: <br />
+                -Redux Toolkit <br />
+                -React Hook <br />
+                -useContext and useReducer <br />
+                -React Hook Form <br />
+                -styled-components
+              </p>
+            </div>
+            <div>
+              <p className="mt-5">
+                JavaScript:
+                <br />
+                -ES6
+                <br />
+                -DOM
+                <br />
+                -AJAX
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* IMAGINATIVE */}
@@ -120,18 +138,32 @@ const MySkills = () => {
             <div className="z-10">
               <p className=" font-playfair text-5xl font-semibold">03</p>
               <p className=" mt-3 font-playfair text-5xl font-semibold">
-                Imaginative
+                Others
               </p>
             </div>
-            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-yellow-400 md:w-3/4"></div>
+            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-yellow-500 md:w-3/4"></div>
           </div>
 
-          <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem
-            doloremque, eveniet cum facilis doloribus. Quae voluptas minima
-            maiores, eaque natus ad tempore perferendis molestias aut quis
-            cupiditate? Omnis, non!
-          </p>
+          <div className=" flex justify-between">
+            <div>
+              <p className="mt-5 ">
+                -npm <br />
+                -Axios <br />
+                -Swiper <br />
+                -SweetAlert2 <br />
+                -AOS <br />
+              </p>
+            </div>
+            <div>
+              <p className="mt-5 ">
+                -Animate.css <br />
+                -Google font <br />
+                -Font Awesome <br />
+                -Firebase <br />
+                -Postman <br />
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

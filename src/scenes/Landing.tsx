@@ -21,14 +21,15 @@ const Landing = ({ setSelectedPage }: Props) => {
             <img
               src={ProfileImage}
               alt="profile"
-              className="z-10 w-full max-w-[400px] transition duration-500 hover:saturate-200 hover:filter md:max-w-[600px]"
+              style={{ filter: "brightness(150%)" }}
+              className="z-10 w-full max-w-[400px] md:max-w-[600px]"
             />
           </div>
         ) : (
           <img
             src={ProfileImage}
             alt="profile"
-            className="z-10 w-full max-w-[400px] transition duration-500 hover:saturate-200 hover:filter md:max-w-[600px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
           />
         )}
       </div>
@@ -57,8 +58,9 @@ const Landing = ({ setSelectedPage }: Props) => {
           </p>
 
           <p className="mb-7 mt-10 text-center text-sm md:text-start ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In unde
-            enim dicta inventore assumenda excepturi beatae modi animi ipsum
+            I am a Front-End Engineer with a background in film production.
+            <br />
+            This is my personal website, feel free to contact me!
           </p>
         </motion.div>
 
@@ -77,6 +79,7 @@ const Landing = ({ setSelectedPage }: Props) => {
           <AnchorLink
             className="rounded-sm bg-gradient-rainblue px-7 py-3 font-semibold text-blue-950 transition duration-500 hover:cursor-pointer hover:bg-blue-600  hover:text-white"
             onClick={() => setSelectedPage("contact")}
+            href="#contact"
           >
             Contact Me
           </AnchorLink>
@@ -84,6 +87,7 @@ const Landing = ({ setSelectedPage }: Props) => {
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 "
             onClick={() => setSelectedPage("contact")}
+            href="#contact"
           >
             <div className=" flex h-full w-full items-center justify-center bg-blue-950 px-10 font-playfair transition duration-500 hover:cursor-pointer hover:text-red-400">
               Let's talk

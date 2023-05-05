@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import LinearGradient from "../components/LinearGradient";
 import { useForm } from "react-hook-form";
-import ContactImg from "../assets/contact-image.jpeg";
+import ContactImg from "../assets/contact-image.png";
 
 const Contact = () => {
   const {
